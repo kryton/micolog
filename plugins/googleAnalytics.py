@@ -17,7 +17,7 @@ class googleAnalytics(Plugin):
 
 	def get(self,page):
 		code=OptionSet.getValue("googleAnalytics_code",default="")
-		return '''<h3>Google Anslytics</h3>
+		return '''<h3>Google Analytics</h3>
 					<form action="" method="post">
 					<p>Analytics Code:</p>
 					<textarea name="code" style="width:500px;height:100px">%s</textarea>
