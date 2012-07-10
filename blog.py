@@ -417,7 +417,8 @@ class SitemapHandler(BaseRequestHandler):
                 addurl(loc,None,'weekly',0.5)
 
 
-##		self.response.headers['Content-Type'] = 'application/atom+xml'
+#        self.response.headers['Content-Type'] = 'application/rss+xml; charset=utf-8'
+        self.response.headers['Content-Type'] = 'application/xml'
         self.render2('views/sitemap.xml',{'urlset':urls})
 
 
